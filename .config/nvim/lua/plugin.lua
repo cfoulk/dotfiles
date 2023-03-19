@@ -34,5 +34,6 @@ require('packer').startup(function(use)
             })
         end
     }
+    use 'ap/vim-css-color'
 end)
 
