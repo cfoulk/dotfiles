@@ -1,0 +1,14 @@
+alt + x
+    dmenuunicode
+
+alt + w
+    firefox
+
+XF86AudioRaiseVolume
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+; pkill -RTMIN+15 dwmblocks
+
+XF86AudioLowerVolume
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-; pkill -RTMIN+15 dwmblocks
+
+XF86AudioMute
+    wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; pkill -RTMIN+15 dwmblocks
