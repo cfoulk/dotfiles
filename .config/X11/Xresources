@@ -1,46 +1,29 @@
 *.alpha: 1
 *.font: monospace:size=14
+
 !Eighties dark
-! special
 *.foreground:   #d3d0c8
 *.background:   #2d2d2d
 *.cursorColor:  #d3d0c8
-
-! black
 *.color0:       #2d2d2d
 *.color8:       #747369
-
-! red
 *.color1:       #f2777a
 *.color9:       #f2777a
-
-! green
 *.color2:       #99cc99
 *.color10:      #99cc99
-
-! yellow
 *.color3:       #ffcc66
 *.color11:      #ffcc66
-
-! blue
 *.color4:       #6699cc
 *.color12:      #6699cc
-
-! magenta
 *.color5:       #cc99cc
 *.color13:      #cc99cc
-
-! cyan
 *.color6:       #66cccc
 *.color14:      #66cccc
-
-! white
 *.color7:       #d3d0c8
 *.color15:      #f2f0ec
-! foreground = fonts, background = self explainitory
 dwm.normbordercolor: #747369
-dwm.normbgcolor: #2d2d2d
-dwm.normfgcolor: #d3d0c8
+dwm.normbgcolor: #2d2d2d  
+dwm.normfgcolor: #d3d0c8 
 dwm.selbordercolor: #f2777a
 dwm.selbgcolor : #66cccc
 dwm.selfgcolor : #2d2d2d
