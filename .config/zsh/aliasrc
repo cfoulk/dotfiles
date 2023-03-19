@@ -1,0 +1,25 @@
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	la="ls -lA" \
+	ll="ls -l"
+
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ip="ip -color=auto"
+
+alias \
+	reboot="sudo reboot" \
+	poweroff="sudo poweroff" \
+	mount="sudo mount -v" \
+	umount="sudo umount -v" \
+	p="pacman" \
+	v="nvim" \
+	sudo="sudo "
+
+
+alias config='/usr/bin/git --git-dir=$HOME/repos/dotfiles --work-tree=$HOME'
