@@ -1,5 +1,6 @@
 *.alpha: 1
-*.font: monospace:size=14
+*.font: JetBrainsMono Nerd Font Mono:size=14:antialias=true:autohint=true:fixed=true
+/* *.font: monospace:size=14 */
 
 !Eighties dark
 *.foreground:   #d3d0c8

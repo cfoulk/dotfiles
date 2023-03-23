@@ -19,6 +19,12 @@ require('packer').startup(function(use)
         "iamcco/markdown-preview.nvim",
         run = function(vim) vim.fn["mkdp#util#install"]() end,
     })
+
+    use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.1',
+      requires = { {'nvim-lua/plenary.nvim'} }
+    }
+
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
@@ -27,13 +33,19 @@ require('packer').startup(function(use)
         end
 
     }
-    -- needs more configuration
-    use { 'loctvl842/monokai-pro.nvim',
-    config = function ()
-            require("monokai-pro").setup({
-            })
-        end
+    use 'nvim-tree/nvim-web-devicons'
+    use {
+      'glepnir/dashboard-nvim',
+      event = 'VimEnter',
+      config = function()
+        require('dashboard').setup {
+          -- config
+        }
+      end,
+      requires = {'nvim-tree/nvim-web-devicons'}
     }
+    -- needs more configuration
+    use 'loctvl842/monokai-pro.nvim'
     use 'ap/vim-css-color'
     use 'tpope/vim-commentary'
 end)

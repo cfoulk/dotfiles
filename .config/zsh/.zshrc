@@ -13,7 +13,6 @@ zstyle ':vcs_info:*' formats '(%F{red}%b%f) ' # git(main)
 precmd () { vcs_info } # always load before displaying the prompt
 
 PROMPT='%F{magenta}%B%~%b%f'$'\n''%B${vcs_info_msg_0_}>>>%b ' # david@macbook /tmp/repo (main) $
-#PROMPT='%n@%m %F{red}%/%f${vcs_info_msg_0_} $ ' # david@macbook /tmp/repo (main) $
 setopt autocd extendedglob
 export VI_MODE_SET_CURSOR=true
 unsetopt beep
