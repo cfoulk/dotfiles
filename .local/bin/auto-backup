@@ -1,7 +1,7 @@
 #!/bin/sh
-usb="D70C-74A5" # UUID FOR MY USB
+usb=$(awk 'NR==12 {print $1}' /etc/fstab | cut -d'"' -f2) # assuming your usb is in fstab and the uuid is on line 12.
 
-if sudo mount UUID="$usb" /mnt/usb 2> /dev/null; then
+if sudo mount UUID="$usb" 2> /dev/null; then
     notify-send "Mounting Successful!" 
 
     sudo cp /home/charlie/docs/2023.xlsx /mnt/usb/
@@ -12,3 +12,4 @@ if sudo mount UUID="$usb" /mnt/usb 2> /dev/null; then
 else
     notify-send "🛑ERROR: Mounting Unsuccessful🛑" 
 fi
+
