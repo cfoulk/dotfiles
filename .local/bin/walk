@@ -1,2 +1,2 @@
 #! /bin/sh
-libreoffice --calc ~/docs/2023.xlsx &
+libreoffice --calc "$HOME/docs/2023.xlsx" &

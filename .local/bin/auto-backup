@@ -4,8 +4,8 @@ usb=$(awk 'NR==12 {print $1}' /etc/fstab | cut -d'"' -f2) # assuming your usb is
 if sudo mount UUID="$usb" 2> /dev/null; then
     notify-send "Mounting Successful!" 
 
-    sudo cp /home/charlie/docs/2023.xlsx /mnt/usb/
-    sudo cp /home/charlie/docs/count.xlsx /mnt/usb/
+    sudo cp "$HOME/docs/2023.xlsx" /mnt/usb/
+    sudo cp "$HOME/docs/count.xlsx" /mnt/usb/
 
     sudo umount UUID="$usb"
     notify-send "Files successfully backed-up! Umounted."
