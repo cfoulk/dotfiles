@@ -31,22 +31,28 @@ require('packer').startup(function(use)
         config = function ()
             require('lualine').setup()
         end
+    }
 
-    }
     use 'nvim-tree/nvim-web-devicons'
-    use {
-      'glepnir/dashboard-nvim',
-      event = 'VimEnter',
-      config = function()
-        require('dashboard').setup {
-          -- config
-        }
-      end,
-      requires = {'nvim-tree/nvim-web-devicons'}
-    }
+    -- use {
+    --   'glepnir/dashboard-nvim',
+    --   event = 'VimEnter',
+    --   config = function()
+    --     -- require('dashboard').setup {
+    --     --   -- config
+    --     -- }
+    --   end,
+    --   -- requires = {'nvim-tree/nvim-web-devicons'}
+    -- }
+    use {'akinsho/bufferline.nvim', tag = "v3.*"}
     -- needs more configuration
-    use 'loctvl842/monokai-pro.nvim'
+    -- use 'loctvl842/monokai-pro.nvim'
+    use 'folke/tokyonight.nvim'
+    -- use "water-sucks/darkrose.nvim"
     use 'ap/vim-css-color'
     use 'tpope/vim-commentary'
+    use 'tpope/vim-fugitive'
+    use 'tpope/vim-surround'
+    use "lukas-reineke/indent-blankline.nvim"
 end)
 

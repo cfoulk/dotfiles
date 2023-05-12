@@ -8,7 +8,7 @@ require("mason").setup({
     }
 })
 require("mason-lspconfig").setup {
-    ensure_installed = { "tsserver", "eslint", "lua_ls", "rust_analyzer", "bashls" },
+    ensure_installed = { "tsserver", "eslint", "clangd", "lua_ls", "rust_analyzer", "bashls", "cssls", "html" },
 } -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap = true, silent = true }
@@ -65,11 +65,23 @@ require("lspconfig").bashls.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }
+require("lspconfig").clangd.setup {
+    on_attach = on_attach,
+    capabilities = capabilities
+}
 require("lspconfig").tsserver.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }
 require("lspconfig").eslint.setup {
+    on_attach = on_attach,
+    capabilities = capabilities
+}
+require("lspconfig").html.setup {
+    on_attach = on_attach,
+    capabilities = capabilities
+}
+require("lspconfig").cssls.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }
