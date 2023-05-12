@@ -1,6 +1,6 @@
 feh --no-fehbg --bg-fill -z ~/pics/wallpapers/* &
 dwmblocks &
-picom --backend xrender &
+picom --backend xrender & 
 sxhkd &
 dunst &
 setxkbmap -option caps:escape

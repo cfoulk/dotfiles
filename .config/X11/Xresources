@@ -1,10 +1,11 @@
-*.alpha: 1
+*.alpha: .8
 *.font: JetBrainsMono Nerd Font Mono:size=14:antialias=true:autohint=true:fixed=true
 /* *.font: monospace:size=14 */
 
 !Eighties dark
 *.foreground:   #d3d0c8
-*.background:   #2d2d2d
+/* *.background:   #2d2d2d */
+*.background:   #000000
 *.cursorColor:  #d3d0c8
 *.color0:       #2d2d2d
 *.color8:       #747369
