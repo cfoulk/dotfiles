@@ -12,6 +12,7 @@ require('packer').startup(function(use)
     use 'hrsh7th/cmp-nvim-lua'
     use 'saadparwaiz1/cmp_luasnip'
 
+    use 'Raimondi/delimitMate'
     -- Snippets
     use 'L3MON4D3/LuaSnip'
     use 'rafamadriz/friendly-snippets'
@@ -21,7 +22,7 @@ require('packer').startup(function(use)
     })
 
     use {
-      'nvim-telescope/telescope.nvim', tag = '0.1.1',
+      'nvim-telescope/telescope.nvim', tag = '0.1.3',
       requires = { {'nvim-lua/plenary.nvim'} }
     }
 
@@ -53,6 +54,6 @@ require('packer').startup(function(use)
     use 'tpope/vim-commentary'
     use 'tpope/vim-fugitive'
     use 'tpope/vim-surround'
-    use "lukas-reineke/indent-blankline.nvim"
+    -- use "lukas-reineke/indent-blankline.nvim"
 end)
 

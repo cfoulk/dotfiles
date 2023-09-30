@@ -79,9 +79,13 @@ require("lspconfig").eslint.setup {
 }
 require("lspconfig").html.setup {
     on_attach = on_attach,
-    capabilities = capabilities
+    capabilities = capabilities,
 }
 require("lspconfig").cssls.setup {
+    on_attach = on_attach,
+    capabilities = capabilities
+}
+require("lspconfig").tailwindcss.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }

@@ -26,19 +26,19 @@ keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 keymap("n", "<C-Up>", "ddkP")
 keymap("n", "<C-Down>", "ddp")
 
-keymap("n", "<leader>u", ":E<CR>")
+keymap("n", "<leader>u", ":Ex<CR>")
 
 -- Moving within my buffer list
 keymap("n", "H", ":bprevious<CR>")
 keymap("n", "L", ":bnext<CR>")
 keymap("n", "<leader>d", ":bdelete<CR>")
 
--- Auto close matching pairs
-keymap("i", "(", "()<left>");
-keymap("i", ")", "()");
-keymap("i", "\"", "\"\"<left>");
-keymap("i", "\'", "\'\'<left>");
-keymap("i", "{", "{}<left><CR><ESC>O");
-keymap("i", "}", "{  }<left><left>");
-keymap("i", "[", "[]<left>");
-keymap("i", "]", "[]");
+-- -- Auto close matching pairs
+-- keymap("i", "(", "()<left>");
+-- keymap("i", ")", "()");
+-- keymap("i", "\"", "\"\"<left>");
+-- keymap("i", "\'", "\'\'<left>");
+-- keymap("i", "{", "{}<left><CR><ESC>O");
+-- keymap("i", "}", "{  }<left><left>");
+-- keymap("i", "[", "[]<left>");
+-- keymap("i", "]", "[]");

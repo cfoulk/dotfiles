@@ -39,11 +39,7 @@ vim.opt.guicursor = 'n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50'
 -- vim.opt.foldmethod = "expr"
 -- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
-vim.api.nvim_create_autocmd("BufWritePost", { command = "!xrdb %", pattern = 'Xresources' })
+-- vim.api.nvim_create_autocmd("BufWritePost", { command = "!xrdb %", pattern = 'Xresources' })
 require("bufferline").setup {}
-require("indent_blankline").setup {
-    -- for example, context is off by default, use this to turn it on
-    -- show_current_context = true,
-    show_end_of_line = true,
-    space_char_blankline = " ", -- show_current_context_start = true,
-}
+
+require("ibl").setup { }
