@@ -19,7 +19,8 @@ alias \
 	umount="sudo umount -v" \
 	p="pacman" \
 	v="nvim" \
-	sudo="sudo "
+	sudo="sudo " \
+    yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
 alias gl='git log --pretty=oneline --graph --decorate --all'
 alias config='/usr/bin/git --git-dir=$HOME/repos/dotfiles --work-tree=$HOME'

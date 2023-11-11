@@ -45,3 +45,6 @@ hi() {
     xdotool type "$var"
 }
 
+# auto delete that annoying Downloads directory
+[ -d ~/Downloads ] && rm -rf ~/Downloads
+
