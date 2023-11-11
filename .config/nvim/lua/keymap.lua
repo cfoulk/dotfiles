@@ -33,12 +33,3 @@ keymap("n", "H", ":bprevious<CR>")
 keymap("n", "L", ":bnext<CR>")
 keymap("n", "<leader>d", ":bdelete<CR>")
 
--- -- Auto close matching pairs
--- keymap("i", "(", "()<left>");
--- keymap("i", ")", "()");
--- keymap("i", "\"", "\"\"<left>");
--- keymap("i", "\'", "\'\'<left>");
--- keymap("i", "{", "{}<left><CR><ESC>O");
--- keymap("i", "}", "{  }<left><left>");
--- keymap("i", "[", "[]<left>");
--- keymap("i", "]", "[]");
