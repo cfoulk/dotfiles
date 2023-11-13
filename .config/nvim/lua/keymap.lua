@@ -3,6 +3,9 @@
 vim.g.mapleader = " "
 local keymap = vim.keymap.set
 
+-- control backspace, delete word
+keymap("i", "<C-H>", "<C-W>");
+
 -- Copy to clipboard
 keymap("v", "<leader>y", [["+y]])
 keymap("n", "<leader>Y", [["+yg_]])
