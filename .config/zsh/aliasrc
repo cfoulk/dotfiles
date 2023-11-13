@@ -24,3 +24,6 @@ alias \
 
 alias gl='git log --pretty=oneline --graph --decorate --all'
 alias config='/usr/bin/git --git-dir=$HOME/repos/dotfiles --work-tree=$HOME'
+
+alias gradler='./gradlew -q --console=plain'
+alias gradlew='./gradlew'
