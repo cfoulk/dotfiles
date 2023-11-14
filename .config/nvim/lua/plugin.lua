@@ -21,7 +21,6 @@ local plugins = {
         'MunifTanjim/prettier.nvim',
         confing = function()
             local prettier = require("prettier")
-
             prettier.setup({
                 bin = 'prettier', -- or `'prettierd'` (v0.23.3+)
                 filetypes = {
@@ -64,21 +63,34 @@ local plugins = {
         version = "*",
         dependencies = 'nvim-tree/nvim-web-devicons',
         config = function()
-            require("bufferline").setup()
+            local bufferline = require("bufferline")
+            bufferline.setup {
+                options = {
+                    style_preset = bufferline.style_preset.no_italic,
+                    indicator = {
+                        style = 'none',
+                    },
+                    show_buffer_icons = false, -- disable filetype icons for buffers
+                    show_buffer_close_icons = false,
+                    show_close_icon = false,
+                    enforce_regular_tabs = true,
+                }
+            }
         end
     },
     {
         'navarasu/onedark.nvim',
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme 'onedark'
+            local theme = 'cool'
+            local onedark = require('onedark')
+            onedark.setup {
+                style = theme,
+            }
+            onedark.load()
+            local cursor_color = require("onedark.palette")[theme].yellow
+            vim.cmd("hi CursorLineNr guifg=" .. cursor_color)
         end,
-    },
-    {
-        "folke/tokyonight.nvim",
-        lazy = false,
-        priority = 1000,
-        opts = {},
     },
     'ap/vim-css-color',
     'tpope/vim-commentary',

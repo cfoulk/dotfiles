@@ -20,9 +20,6 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 
 vim.opt.termguicolors = true
-
--- #ff6188 for pink monokai, #9854f1 tokyonight
-vim.cmd([[hi CursorLineNr guifg=#9854f1]])
 vim.opt.cursorline = true
 
 -- insert mode different cursor
