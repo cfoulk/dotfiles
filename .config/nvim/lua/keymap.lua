@@ -18,21 +18,25 @@ keymap("v", "<leader>P", [["+P]])
 keymap("n", "<leader>p", [["+p]])
 keymap("n", "<leader>P", [["+P]])
 
-keymap("n", "J", "mzJ`z")
-keymap("n", "<C-d>", "<C-d>zz")
-keymap("n", "<C-u>", "<C-u>zz")
-keymap("n", "n", "nzzzv")
-keymap("n", "N", "Nzzzv")
+keymap("n", "J", [[mzJ`z]])
+keymap("n", "<C-d>", [[<C-d>zz]])
+keymap("n", "<C-u>", [[<C-u>zz]])
+keymap("n", "n", [[nzzzv]])
+keymap("n", "N", [[Nzzzv]])
 keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Move entire line up/down
-keymap("n", "<C-Up>", "ddkP")
-keymap("n", "<C-Down>", "ddp")
+keymap("n", "<C-Up>", [[ddkP]])
+keymap("n", "<C-Down>", [[ddp]])
 
-keymap("n", "<leader>u", ":Ex<CR>")
+-- Append new line above/below
+keymap("n", "<leader>O", [[m`O<ESC>``]])
+keymap("n", "<leader>o", [[m`o<ESC>``]])
+
+keymap("n", "<leader>u", [[<ESC><CMD>Ex<CR>]])
 
 -- Moving within my buffer list
-keymap("n", "H", ":bprevious<CR>")
-keymap("n", "L", ":bnext<CR>")
-keymap("n", "<leader>d", ":bdelete<CR>")
+keymap("n", "H", [[<ESC><CMD>bprevious<CR>]])
+keymap("n", "L", [[<ESC><CMD>bnext<CR>]])
+keymap("n", "<leader>d", [[<ESC><CMD>bdelete<CR>]])
 
