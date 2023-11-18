@@ -22,6 +22,10 @@ alias \
 	sudo="sudo " \
     yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
+alias \
+    nvconfig='cd "$XDG_CONFIG_HOME/nvim"; v init.lua' \
+    zshconfig='cd "$XDG_CONFIG_HOME/zsh"; v .zshrc'
+
 alias gl='git log --pretty=oneline --graph --decorate --all'
 alias config='/usr/bin/git --git-dir=$HOME/repos/dotfiles --work-tree=$HOME'
 

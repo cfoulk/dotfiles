@@ -10,7 +10,9 @@ SAVEHIST=10000
 setopt prompt_subst
 autoload -Uz vcs_info # enable vcs_info
 zstyle ':vcs_info:*' formats '(%F{red}%b%f) ' # git(main)
-precmd () { vcs_info } # always load before displaying the prompt
+precmd () { 
+    vcs_info 
+} # always load before displaying the prompt
 
 PROMPT='%F{magenta}%B%~%b%f'$'\n''%B${vcs_info_msg_0_}>>>%b ' # david@macbook /tmp/repo (main) $
 setopt autocd extendedglob
@@ -37,6 +39,7 @@ function zle-line-init zle-keymap-select {
     RPS2=$RPS1
     zle reset-prompt
 }
+
 
 zle -N zle-line-init
 zle -N zle-keymap-select
