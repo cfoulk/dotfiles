@@ -23,11 +23,11 @@ alias \
     yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
 alias \
+    config='/usr/bin/git --git-dir=$HOME/repos/dotfiles --work-tree=$HOME' \
     nvconfig='cd "$XDG_CONFIG_HOME/nvim"; v init.lua' \
-    zshconfig='cd "$XDG_CONFIG_HOME/zsh"; v .zshrc'
+    zshconfig='cd "$XDG_CONFIG_HOME/zsh"; v .zshrc' \
+    gl='git log --pretty=oneline --graph --decorate --all' 
 
-alias gl='git log --pretty=oneline --graph --decorate --all'
-alias config='/usr/bin/git --git-dir=$HOME/repos/dotfiles --work-tree=$HOME'
-
-alias gradler='./gradlew -q --console=plain'
-alias gradlew='./gradlew'
+alias \
+    gradler='./gradlew -q --console=plain' \
+    gradlew='./gradlew'

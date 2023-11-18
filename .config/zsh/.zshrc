@@ -18,7 +18,8 @@ PROMPT='%F{magenta}%B%~%b%f'$'\n''%B${vcs_info_msg_0_}>>>%b ' # david@macbook /t
 setopt autocd extendedglob
 export VI_MODE_SET_CURSOR=true
 unsetopt beep
-bindkey -v
+bindkey '^H' backward-kill-word
+bindkey '5~' kill-word
 # Use vim keys in tab complete menu:
 #bindkey -M menuselect 'h' vi-backward-char
 #bindkey -M menuselect 'k' vi-up-line-or-history
