@@ -1,0 +1,37 @@
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	la="ls -lA" \
+	ll="ls -l"
+
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ip="ip -color=auto"
+
+alias \
+	reboot="sudo reboot" \
+	poweroff="sudo poweroff" \
+	mount="sudo mount -v" \
+	umount="sudo umount -v" \
+	mmount="sudo mount -v /dev/sdc1" \
+	uumount="sudo umount -v /dev/sdc1" \
+	p="pacman" \
+	pac="pacman" \
+	v="nvim" \
+	vi="nvim" \
+	sudo="sudo " \
+    yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+
+alias \
+    config='/usr/bin/git --git-dir=$HOME/repos/dotfiles --work-tree=$HOME' \
+    nvconfig='cd "$XDG_CONFIG_HOME/nvim"; v init.lua' \
+    zshconfig='cd "$XDG_CONFIG_HOME/zsh"; v .zshrc' \
+    gl='git log --pretty=oneline --graph --decorate --all' 
+
+alias \
+    gradler='./gradlew -q --console=plain' \
+    gradlew='./gradlew' 

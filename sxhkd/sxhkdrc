@@ -1,0 +1,35 @@
+alt + x
+    dmenuunicode
+
+alt + w
+    firefox
+
+alt + W
+    firefox -private-window
+
+XF86AudioRaiseVolume
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+; kill -49 $(pidof dwmblocks)
+
+XF86AudioLowerVolume
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-; kill -49 $(pidof dwmblocks)
+
+XF86AudioMute
+    wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; kill -49 $(pidof dwmblocks)
+
+XF86AudioStop
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
+
+XF86AudioPlay
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+
+XF86AudioNext
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+
+XF86AudioPrev
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+
+Print
+    scrot -s ~/pics/screenshots/raw/%Y-%m-%d-%T-screenshot.png
+
+alt + backslash
+    obs 

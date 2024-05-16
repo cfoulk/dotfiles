@@ -1,0 +1,2 @@
+#! /bin/sh
+libreoffice --calc "$HOME/docs/count.xlsx" &

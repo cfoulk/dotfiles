@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if grep -xq 'up' /sys/class/net/e*/operstate 2> /dev/null ; then
+    icon="🌎"
+else
+    icon="❌"
+fi
+
+echo "$icon"

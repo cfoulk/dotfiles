@@ -1,0 +1,10 @@
+feh --no-fehbg --bg-fill -z ~/pics/wallpapers/* &
+dwmblocks &
+# picom --backend glx & 
+sxhkd &
+unclutter &
+dunst &
+setxkbmap -option caps:swapescape
+xrdb -merge -I$HOME ~/.config/X11/Xresources
+nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUTargetFanSpeed=50"
+exec dwm

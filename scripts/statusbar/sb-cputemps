@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cpu=$(sensors | awk '/CPUTIN:/ {print "💻 " $2}' | sed 's/\+//g')
+gpu=$(nvidia-smi | head -10 | tail -1 | awk '{print "📹 " $3}')
+echo -n $cpu ; echo -n ' ' ; echo $gpu

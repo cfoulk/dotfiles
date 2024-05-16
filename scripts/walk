@@ -1,0 +1,2 @@
+#! /bin/sh
+libreoffice --calc "$HOME/docs/2024.xlsx" &
