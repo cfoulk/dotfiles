@@ -5,8 +5,8 @@ export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 
 # Default programs:
 export EDITOR="nvim"
-export TERMINAL="st"
-export TERMINAL_PROG="st"
+export TERMINAL="alacritty"
+export TERMINAL_PROG="alacritty"
 export BROWSER="firefox"
 
 export XDG_CONFIG_HOME="$HOME/.config"

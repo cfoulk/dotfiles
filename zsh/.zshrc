@@ -54,6 +54,6 @@ hi() {
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-if command -v fastfetch &>/dev/null; then
-    echo;echo;fastfetch
+if command -v pfetch &>/dev/null; then
+    echo;echo;pfetch
 fi

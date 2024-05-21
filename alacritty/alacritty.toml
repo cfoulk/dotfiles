@@ -1,6 +1,6 @@
 live_config_reload = true
 
-import = ["~/.config/alacritty/base16-black-metal-256.toml"]
+import = ["~/.config/alacritty/rose-pine-moon.toml"]
 
 [window]
 padding = { x = 1, y = 1}

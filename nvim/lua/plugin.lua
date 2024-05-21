@@ -97,9 +97,10 @@ local plugins = {
     'tpope/vim-fugitive',
     'tpope/vim-surround',
     'metalelf0/base16-black-metal-scheme',
+    { "rose-pine/neovim", name = "rose-pine" }
 }
 
 local opts = {}
 
 require("lazy").setup(plugins, opts)
-vim.cmd [[colorscheme base16-black-metal]]
+vim.cmd [[colorscheme rose-pine-moon]]
